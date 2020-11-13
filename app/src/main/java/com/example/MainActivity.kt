@@ -1,19 +1,14 @@
-package com.example.test1
+package com.example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.bejson.pojo.ColloerBean
-import com.google.gson.Gson
+import com.example.logic.network.Appservice
+import com.example.test1.R
+import com.example.logic.network.ServiceCreater
 import kotlinx.android.synthetic.main.activity_main.*
-import okhttp3.Call
-import okhttp3.Callback
-import okhttp3.Response
-import org.json.JSONObject
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         button1.setOnClickListener {
 
 
-            addSer.getData("ckIblIFfPUfO8Ego").enqueue(object : retrofit2.Callback<ColloerBean> {
+            addSer.getData(SWApplication.Token).enqueue(object : retrofit2.Callback<ColloerBean> {
                 override fun onResponse(
                     call: retrofit2.Call<ColloerBean>,
                     response: retrofit2.Response<ColloerBean>
@@ -49,7 +44,9 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
-
+        button2.setOnClickListener {
+            Toast.makeText(this, "${SWApplication.context}", Toast.LENGTH_SHORT).show()
+        }
 /*
         Httttps.sendHttpRequest("https://api.caiyunapp.com/v2.5/{ckIblIFfPUfO8Ego}/{121.6544,25.1552}/realtime.json", object : Callback {
             override fun onFailure(call: Call, e: IOException) {

@@ -1,6 +1,6 @@
 /**
-  * Copyright 2020 bejson.com 
-  */
+ * Copyright 2020 bejson.com
+ */
 package com.bejson.pojo;
 
 /**
@@ -24,95 +24,109 @@ public class Realtime {
     private Precipitation precipitation;
     private Air_quality air_quality;
     private Life_index life_index;
+
     public void setStatus(String status) {
-         this.status = status;
-     }
-     public String getStatus() {
-         return status;
-     }
+        this.status = status;
+    }
+
+    public String getStatus() {
+        return status;
+    }
 
     public void setTemperature(double temperature) {
-         this.temperature = temperature;
-     }
-     public double getTemperature() {
-         return temperature;
-     }
+        this.temperature = temperature;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
 
     public void setHumidity(double humidity) {
-         this.humidity = humidity;
-     }
-     public double getHumidity() {
-         return humidity;
-     }
+        this.humidity = humidity;
+    }
+
+    public double getHumidity() {
+        return humidity;
+    }
 
     public void setCloudrate(double cloudrate) {
-         this.cloudrate = cloudrate;
-     }
-     public double getCloudrate() {
-         return cloudrate;
-     }
+        this.cloudrate = cloudrate;
+    }
+
+    public double getCloudrate() {
+        return cloudrate;
+    }
 
     public void setSkycon(String skycon) {
-         this.skycon = skycon;
-     }
-     public String getSkycon() {
-         return skycon;
-     }
+        this.skycon = skycon;
+    }
+
+    public String getSkycon() {
+        return skycon;
+    }
 
     public void setVisibility(double visibility) {
-         this.visibility = visibility;
-     }
-     public double getVisibility() {
-         return visibility;
-     }
+        this.visibility = visibility;
+    }
+
+    public double getVisibility() {
+        return visibility;
+    }
 
     public void setDswrf(double dswrf) {
-         this.dswrf = dswrf;
-     }
-     public double getDswrf() {
-         return dswrf;
-     }
+        this.dswrf = dswrf;
+    }
+
+    public double getDswrf() {
+        return dswrf;
+    }
 
     public void setWind(Wind wind) {
-         this.wind = wind;
-     }
-     public Wind getWind() {
-         return wind;
-     }
+        this.wind = wind;
+    }
+
+    public Wind getWind() {
+        return wind;
+    }
 
     public void setPressure(double pressure) {
-         this.pressure = pressure;
-     }
-     public double getPressure() {
-         return pressure;
-     }
+        this.pressure = pressure;
+    }
+
+    public double getPressure() {
+        return pressure;
+    }
 
     public void setApparent_temperature(double apparent_temperature) {
-         this.apparent_temperature = apparent_temperature;
-     }
-     public double getApparent_temperature() {
-         return apparent_temperature;
-     }
+        this.apparent_temperature = apparent_temperature;
+    }
+
+    public double getApparent_temperature() {
+        return apparent_temperature;
+    }
 
     public void setPrecipitation(Precipitation precipitation) {
-         this.precipitation = precipitation;
-     }
-     public Precipitation getPrecipitation() {
-         return precipitation;
-     }
+        this.precipitation = precipitation;
+    }
+
+    public Precipitation getPrecipitation() {
+        return precipitation;
+    }
 
     public void setAir_quality(Air_quality air_quality) {
-         this.air_quality = air_quality;
-     }
-     public Air_quality getAir_quality() {
-         return air_quality;
-     }
+        this.air_quality = air_quality;
+    }
+
+    public Air_quality getAir_quality() {
+        return air_quality;
+    }
 
     public void setLife_index(Life_index life_index) {
-         this.life_index = life_index;
-     }
-     public Life_index getLife_index() {
-         return life_index;
-     }
+        this.life_index = life_index;
+    }
+
+    public Life_index getLife_index() {
+        return life_index;
+    }
 
 }
