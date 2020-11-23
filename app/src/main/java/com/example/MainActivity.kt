@@ -15,10 +15,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+/*
+      val addSer = ServiceCreater.create(Appservice::class.java)
 
-        val addSer = ServiceCreater.create(Appservice::class.java)
-
-        button1.setOnClickListener {
+      button1.setOnClickListener {
 
 
             addSer.getData(SWApplication.Token).enqueue(object : retrofit2.Callback<ColloerBean> {
@@ -42,29 +42,29 @@ class MainActivity : AppCompatActivity() {
                 }
 
             })
-        }
+        }*/
 
-        button2.setOnClickListener {
-            Toast.makeText(this, "${SWApplication.context}", Toast.LENGTH_SHORT).show()
-        }
+      /* button2.setOnClickListener {
+           Toast.makeText(this, "${SWApplication.context}", Toast.LENGTH_SHORT).show()
+       }*/
 /*
-        Httttps.sendHttpRequest("https://api.caiyunapp.com/v2.5/{ckIblIFfPUfO8Ego}/{121.6544,25.1552}/realtime.json", object : Callback {
-            override fun onFailure(call: Call, e: IOException) {
-                e.printStackTrace()
-            }
+      Httttps.sendHttpRequest("https://api.caiyunapp.com/v2.5/{ckIblIFfPUfO8Ego}/{121.6544,25.1552}/realtime.json", object : Callback {
+          override fun onFailure(call: Call, e: IOException) {
+              e.printStackTrace()
+          }
 
-            override fun onResponse(call: Call, response: Response) {
-                var responseData = response.body()?.string()
-                Log.d("MainActivity", "$responseData")
-            }
-        })
+          override fun onResponse(call: Call, response: Response) {
+              var responseData = response.body()?.string()
+              Log.d("MainActivity", "$responseData")
+          }
+      })
 */
 
-        /*
-         val w = GGGssontest()
-         button1.setOnClickListener {
-             Toast.makeText(this, "${w.status + w.query}", Toast.LENGTH_LONG).show()
-         }*/
+      /*
+       val w = GGGssontest()
+       button1.setOnClickListener {
+           Toast.makeText(this, "${w.status + w.query}", Toast.LENGTH_LONG).show()
+       }*/
 
-    }
+  }
 }

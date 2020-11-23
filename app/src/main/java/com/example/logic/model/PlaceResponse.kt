@@ -1,4 +1,4 @@
-package com.example.logic.network
+package com.example.logic.model
 
 import com.google.gson.annotations.SerializedName
 
